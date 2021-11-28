@@ -1,0 +1,176 @@
+/* || ===
+
+= IMKAN.com.sa
+= CARDS
+
+=== || */
+
+// * Start Features * //
+#headers-boxs
+{
+    margin-bottom: -340px;
+    article
+    {
+        @media screen and (max-width:$tablet)
+        {
+            margin-bottom:$sm-whitespace;
+        }
+        .bg
+        {
+            background: $c-white;
+            padding: $md-whitespace;
+            box-shadow: 0px 15px 60px 0px rgba(35, 39, 48, 0.15);
+            height: 260px;
+            width: 100%;
+            border-radius: 10px;
+            position: relative;
+            top: 0;
+            @include transition;
+            z-index: 3;
+             @media screen and (max-width:$tablet)
+            {
+                height: 220px;
+            }
+            &:hover
+            {
+                background: $c-brand2;
+            }
+            &:hover > i
+            {
+                color: $c-white;
+            }
+             &:hover > header > h1
+            {
+                color: $c-white;
+            }
+            &:hover > header > p
+            {
+                display: none;
+            }
+            &:hover > header > a
+            {
+                display: block;
+            }
+            header
+            {
+                h1
+                {
+                    color: $c-brand;
+                    font-size: $lr-xm-fontsize;
+                    font-family: 'Gulf';
+                    font-weight: bold;  
+                    @media screen and (max-width:$tablet){
+                        font-size: 20px;
+                    }
+                }
+                p
+                {
+                    font-family: 'Gulf';
+                    font-size: $xm-fontsize;
+                    color: $c-mgray;
+                    @media screen and (max-width:$tablet){
+                        font-size: $md-sm-fontsize;
+                    }
+                }
+                a
+                {
+                    display: none;
+                    margin-top: $md-whitespace + 5px;
+                    color: $c-white;
+                    float: right;
+                    font-family: 'Gulf';
+                    &:hover
+                    {
+                        color: $c-white;
+                    }
+                    i
+                    {
+                        margin-top: $sm-whitespace - 5px;  
+                        line-height: 2.6;
+                    }
+                }    
+            }
+        }
+        i
+        {
+            font-size: 60px;
+            line-height: 0;
+            display: block;
+            margin-top: $sm-whitespace - 1px;
+            @media screen and (max-width:$tablet){
+                font-size: 40px;
+            }
+        }
+    }
+
+}
+#team
+{
+    overflow: hidden;
+    margin-top: -60px;
+    article
+    {
+    background: $c-black;
+    height: 400px;
+    
+    position: relative;
+    margin-bottom: $md-whitespace;
+    border-radius: $box-radius;
+    @include transition;
+    .img-cut
+    {
+        height: 400px;
+
+    overflow: hidden;
+    opacity:0.6;
+    border-radius: $box-radius;
+    img
+    {
+        height: 400px;
+    }
+    }
+
+    // header
+    header
+    {
+        position: absolute;
+        bottom: 0;
+        padding: $md-whitespace $md-whitespace $sm-whitespace;
+        .more
+        {
+        max-height: 0;
+        overflow: hidden;
+        color: $c-white !important;
+        }
+    }
+
+    &:hover
+    {
+        background: $c-brand2;
+        .img-cut
+        {
+            opacity:0.2;
+        }
+    header
+    {
+        h3
+        {
+          margin-bottom: $sm-whitespace;
+        }
+        .more{
+            max-height: 1000px;
+            padding-bottom: $md-whitespace;
+            line-height: 30px;
+        i
+        {
+            top: 3px !important;
+        }
+          overflow: visible;
+        }
+    }
+
+    }
+
+  }
+
+}

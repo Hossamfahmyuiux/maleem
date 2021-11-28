@@ -1,0 +1,276 @@
+/* || ===
+
+= IMKAN.com.sa
+= HEADER
+
+=== || */
+body
+{
+
+    background-color: $c-lgray;
+    
+}
+#top-page
+{
+    
+    background-color: $c-brand;
+    padding: 40px 0 110px 0;
+    border-radius: 0 0 0 280px;
+    height: 600px;
+    
+    .logo
+    {
+        img
+        {
+            width: auto;
+            height: 62px;
+            float: right;
+        }
+    }
+    .slick-dots
+    {
+        margin: $md-whitespace 0 0!important;
+        li
+        {
+            button
+            {
+                background: transparent;
+                border: 2px solid $c-white!important;
+            }
+        }
+        .slick-active
+        {
+            button
+            {
+                border: 2px solid $c-white!important;
+                top: -2px!important;
+            }
+        }
+      
+    }
+    .slick-list
+    {
+        
+    }
+    .slide-bg
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 0 0 0 280px;
+
+    .image-slide
+    {
+
+        img
+        {   
+
+            width: 100%;
+            opacity: 0.1;
+            border-radius: 0 0 0 280px;
+            @media screen and(max-width:$tablet)
+            {    
+                width: 100%;
+                height: 600px;
+            }
+        }
+    }
+    }
+   
+    nav
+    {
+        position: relative;
+        ul
+        {
+            margin-right: $sm-whitespace;
+            li
+            {
+                .menu
+                {   width: $sm-whitespace + 10px;
+                    float: left;
+                    margin: 9px 9px 0 6px;
+                    span
+                    {
+                        height: 2px;
+                        width: 100%;
+                        margin-bottom: $sm-whitespace - 9px;
+                        background-color: $c-white;
+                        display: block;
+                        border-radius: 18px;
+                    }
+                } 
+                .dropdown
+                {
+                
+                    background-color:$c-white;
+                    padding: $md-whitespace - 10px;
+                    border-radius: $sm-whitespace - 5px;
+                    box-shadow: 0px 15px 60px 0px rgba(35, 39, 48, 0.15);
+                    position: absolute;
+                    z-index: 99999;
+                    left: 70px;
+                    margin-top: $lr-whitespace;
+                    display: none;
+                    @media screen and(max-width:$tablet)
+                    {
+                        width: 100%;
+                        left: 0;
+                        margin-left: 0;
+                        position: fixed;
+                    }
+                    li
+                    {
+                        display: block;
+                        margin-bottom: 7.5px;
+                        
+                        a{
+                            color: $c-dgray;
+                            font-size: $xm-fontsize;
+                            font-family: 'Gulf';
+                            @media screen and(max-width:$tablet)
+                            {
+                                font-size: $md-sm-fontsize;
+                            }
+                            &:hover
+                            {
+                                color: $c-brand;
+                            }
+                        }
+                        
+                    }
+                }
+                .active{
+                    display: block;
+                }
+            }
+            .en
+            {
+                display: inline-block;
+                a
+                {
+                    color: $c-white;
+                    background: $c-blue;
+                    padding: 5px 14px;
+                    float: left;
+                    font-size: $xs-fontsize;
+                    border-radius: 9px;
+                    margin-right: $sm-whitespace;
+                    font-family: $en-font;
+                    
+                }
+            }
+        }  
+        .contact
+        {
+            padding-top: 3px;
+            @media screen and (max-width:$tablet)
+            {
+                padding-right: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+            li
+            {
+                margin: 0 15px;
+                @media screen and (max-width:$tablet)
+                {
+                    float: right;
+                    width: 100%;
+                }
+                a
+                {   
+                    font-size: $xm-fontsize;
+                    font-family: $en-font;
+                    color: $c-white;
+                    margin-left:15px;
+                    @media screen and (max-width:$tablet)
+                    {
+                        margin: 0px;
+                        font-size: 16px;
+                    }
+                    
+                    i
+                    {
+                        float: right;
+                        margin-left:$sm-whitespace;
+                        font-size: $md-fontsize!important;
+                    }
+                }
+            }
+            a
+            {
+                font-size: $xm-fontsize;
+                font-family: 'Gulf';
+                color: $c-white;
+                
+                @media screen and (max-width:$tablet)
+                {
+                    width: 100%;
+                    margin: 10px 17px;
+                }    
+                    i
+                    {
+                        font-size: $md-fontsize!important;
+                        margin-left: $sm-whitespace;
+                        position: relative;
+                        top: 3px;
+                    }
+            }
+        }
+    }
+    .top-section
+    {
+        margin-bottom: $lr-whitespace + 20px;
+        position: relative;
+        z-index: 1!important;
+        @media screen and (max-width:$tablet)
+        {
+            margin-bottom: $lr-whitespace;
+        }
+        .slider
+        {
+            article
+            {
+                margin-top: 114px;
+                @media screen and (max-width:$tablet)
+                {
+                    margin-top: $lr-whitespace;
+                }
+                header
+                {
+                    h1{
+                        font-family: 'Gulf';
+                        font-size: 30px;
+                        @media screen and (max-width:$tablet){
+                            font-size: 20px;
+                        }
+                    }
+                    p{
+                        font-family: 'Gulf';
+                        font-size: $md-fontsize;
+                        margin-bottom: $lr-whitespace - 5px;
+                        @media screen and (max-width:$tablet){
+                            font-size: 16px;
+                            margin-bottom: $md-whitespace;
+                        }
+                    }
+                }
+            }    
+        }
+    }
+}
+
+.about-header
+{
+    .top-text 
+    {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        p{
+            font-size: 21px;
+        }
+    }
+}

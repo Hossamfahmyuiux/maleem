@@ -1,0 +1,157 @@
+/* || ===
+
+= IMKAN.com.sa
+= FOOTER
+
+=== || */
+
+// ** Start contact section **//
+
+#bottom-page
+{
+    background-color: $c-white;
+    box-shadow: 0px 15px 60px 0px rgba(35, 39, 48, 0.15);
+    padding: 45px 0;
+    margin-top: 230px;
+    @media screen and(max-width:$tablet)
+    {
+        margin-top: 0px;
+        padding: 30px 0;
+    }
+    .copyrights
+    {
+        padding-bottom: 79px;
+        @media screen and (max-width:$tablet)
+        {
+            margin-bottom: $md-whitespace;
+        }
+        .logo
+        {
+            
+            img
+            {
+                float: right;
+                width: 45px;
+                height: 45px;
+                margin-top: 19px;
+                margin-left: 10px;
+                @media screen and(max-width:$tablet)
+                {    
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        .contact-list
+        {
+            margin-top: $md-whitespace;
+            @media screen and(max-width:$tablet)
+            {    
+                margin-top: 15px;
+            }
+            li
+            {
+                
+                margin-right: $lr-whitespace;
+                @media screen and(max-width:$tablet)
+                {
+                    margin-right: 0px;
+                    margin-top: 20px;
+                }
+                i
+                {
+                    float: right;
+                    color: #fff;
+                    height: 40px;
+                    width: 40px;
+                    background: #767d8c;
+                    border-radius: 10px;
+                    margin-left: 15px;
+                    margin-top: -10px;
+                    text-align: center;
+                    line-height: 48px;
+                    font-size: 14px;
+                 
+                }
+                span
+                {
+                    
+                    font-family: $en-font;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    hr{
+        width: 100%;
+    }
+    .links
+    {
+        .site-map 
+        {
+            list-style: none;
+            li
+            {
+                margin-bottom: 10px;
+                a
+                {
+                    color: #767d8c;
+                    &:hover
+                    {
+                        color: $c-black;
+                    }
+                }
+                
+            }
+        }
+        .social-media
+        {
+            li
+            {
+                a
+                {
+                    width: 70px;
+                    display: block;
+                    height: 40px;
+                    line-height: 49px;
+                    background: #fff;
+                    border-radius: 10px;
+                    text-align: left;
+                    float: left;
+                    text-align: center;
+                    margin: 0 12px;
+                    box-shadow: -4px 6px 11px 0px rgba(35, 39, 48, 0.04);
+                    @include transition;
+                    color: $c-facebook;
+                    &:hover{
+                        background-color: $c-facebook;
+                        color: #fff;
+                    }
+                }
+                .tw
+                {
+                    color: $c-twitter;
+                    &:hover
+                    {
+                        background-color: $c-twitter;
+                        
+                    }
+                }
+                .g
+                {
+                    color: $c-google;
+                    &:hover
+                    {
+                        background-color: $c-google;
+                        
+                    }
+                }
+            }
+        }
+   
+    }
+}
+.team-footer
+{
+    margin-top: 197px;
+}

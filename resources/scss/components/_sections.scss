@@ -1,0 +1,417 @@
+/* || ===
+
+= IMKAN.com.sa
+= SECTIONS
+
+=== || */
+
+#know-more
+{
+    padding: 280px 0 160px;
+    position: relative;
+
+    article
+    {
+        @media screen and (max-width:$tablet)
+        {
+            padding: 0 $sm-whitespace;
+            margin-top: $lr-whitespace;
+        }
+        h1
+        {
+            font-family: 'Gulf';
+            font-size: $lr-fontsize;
+            @media screen and (max-width:$tablet){
+                font-size: $md-fontsize;
+            }
+        }
+        p
+        {
+            font-family: 'Gulf';
+            font-size: $md-fontsize;
+            line-height: 32px!important;
+            @media screen and (max-width:$tablet){
+                font-size: $md-sm-fontsize;
+            }
+        }
+        a{
+            @media screen and(max-width:$tablet)
+            {    
+                font-size: $md-sm-fontsize;
+            }
+            i{
+                margin-top: $sm-whitespace - 1px;
+                @media screen and(max-width:$tablet)
+                {    
+                    font-size: $sm-iconsize;
+                }
+            }
+        }
+    }
+    .calc
+    {
+        padding: 0px 120px 0 0;
+        border-radius: 0 0 300px 0;
+        z-index: 7;
+        position: relative;
+        @media screen and (max-width:$tablet)
+        {
+            padding: 30px 20px 30px 0;
+            border-radius: 0;
+        }
+        i
+        {
+            font-size: 30px;
+            @media screen and (max-width:$tablet){
+                font-size: $md-fontsize;
+            }
+            
+        }
+        h2{
+            font-size: 24px;
+            font-family: 'Gulf';
+            @media screen and (max-width:$tablet){
+                font-size: $md-fontsize;
+            }
+        }
+        p{
+            font-size: $md-fontsize;
+            font-family: 'Gulf';
+            @media screen and (max-width:$tablet){
+                font-size: $md-sm-fontsize;
+            }
+        }
+        
+        form
+        {
+            button
+            {
+                color: $c-white;
+                padding: 20px 30px;
+                line-height: 0.7;
+                box-shadow: 0px 15px 60px 0px rgba(35, 39, 48, 0.15);
+                i{
+                    font-size: 14px;
+                    color: $c-white;
+                }
+                 @media screen and (max-width:$tablet)
+                {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+    
+    .calc-bg
+    {
+        background: $c-white url(../imgs/calc-bg.png) no-repeat top left;
+        background-size: 100%;
+        background-attachment: cover;
+        border-radius: 0 0 280px 0;
+        position: absolute;
+        display: block;
+        width: 49vw;
+        height: 100%;
+        z-index: 0;
+        top: 0px;
+        left: 0px;
+        background-position: 50%;
+        z-index: 2;
+        @media screen and (max-width:$tablet)
+        {
+            display: none;
+        }
+    }
+    .anmited-bg
+    {
+        animation: animatedBackground 40s linear infinite;
+        background-image: url(../imgs/animated-bg.png);
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        background-size: 80% auto;
+        top: 120px;
+        opacity: 0.3;
+    }
+
+}
+
+.about-more
+{
+    h1{
+        font-size: $lr-fontsize;
+        
+    }
+    p{
+        font-size: $xm-fontsize!important;
+        line-height: 34px!important;
+    }
+    .gm-text
+    {
+        background-color: #7ecb73!important;
+    
+        h1
+        {
+            font-size: $lr-fontsize;
+        }
+        p{
+            font-size: $xm-fontsize!important;
+            line-height: 34px!important;
+            margin-bottom: 0!important;
+        }
+    
+    }
+}
+#help
+{
+    padding-bottom: 10px;
+    @media screen and(max-width:$tablet)
+    {    
+        margin-top: $md-whitespace;
+        padding-bottom: $md-whitespace;
+    }
+    h1{
+        font-family: 'Gulf';
+    }
+    p{
+        font-family: 'Gulf';
+        line-height: 32px!important;
+    }
+    article
+    {
+        @media screen and(max-width:$tablet)
+        {    
+            margin-right: $sm-whitespace - 5px;
+        }
+        header
+        {
+            h1
+            {
+                padding-right: 0px;
+                font-size: $lr-fontsize;
+                color: $c-dgray;
+                 @media screen and(max-width:$tablet)
+                 {    
+                    padding-right: $sm-whitespace - 5px;
+                     font-size: xm-fontsize;
+                }
+            } 
+             p
+            {
+                padding-right: 0px;
+                font-size: $md-fontsize;
+                font-family: 'Gulf';
+                  @media screen and(max-width:$tablet)
+                 {    
+                    padding-right: $sm-whitespace - 5px;
+                     font-size: 16px
+                }
+            } 
+        }
+        .accordion-list
+        {
+            padding-right: 0px;
+            position: relative;
+            z-index: 7;
+            article
+            {
+                background: $c-white;
+                box-shadow: 0px 15px 60px 0px rgba(35, 39, 48, 0.15);
+                padding: 15px 15px 15px 15px;
+                border-radius: 3px;
+                max-height: 120px;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: $sm-whitespace;
+                cursor: pointer;
+                
+                &:hover > i
+                {
+                    background-color: $c-black;
+                }
+                &:hover > h1
+                {
+                    background-color: $c-black;
+                }
+                
+                i{
+                    position: relative;
+                    left: 0;
+                    top: $md-whitespace - 4px;
+                    transform: rotate(180deg);
+                    float: left;
+                    cursor: pointer;
+                    background: $c-mgray;
+                    color: $c-white;
+                    border-radius: 50%;
+                    height: $md-whitespace - 5px;
+                    width: $md-whitespace - 5px;
+                    transition: all 0.2s;
+                    text-align: center;
+                    line-height: 32px;
+                    font-size: 11px !important;
+                    position: absolute;
+                    left: $sm-whitespace;
+                    top: $sm-whitespace;
+                }
+                h1{
+                    font-size: $xm-fontsize;
+                    color: $c-mgray;
+                     @media screen and (max-width:$tablet)
+                    {
+                        font-size: 16px;
+                    }
+                }
+                p
+                {
+                    font-size: 17px;
+                    color: $c-mgray;
+                    text-align: right;
+                    width: 100%;
+                    float: right;
+                    margin-top: $sm-whitespace;
+                    border-top: 2px solid #f7f8fc;
+                    padding-top: $sm-whitespace - 2px;
+                    display: none;
+                    @media screen and (max-width:$tablet)
+                    {
+                        font-size: 14px;
+                    }
+                }
+                &.active > p
+                {
+                    display: block;
+                }
+            }
+        }
+    }
+    .contact
+    {
+        .bg
+        {
+            background: $c-brand2;
+            padding: $lr-whitespace;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 15px 60px 0px rgba(35, 39, 48, 0.15);
+            @media screen and(max-width:$tablet){
+                padding: $md-whitespace;
+            }
+            i
+            {
+                font-size: 80px;
+                height: 60px;
+                float: right;
+                margin-left: $md-whitespace;
+                @media screen and(max-width:$tablet)
+                {    
+                    font-size: 50px;
+                }
+            }
+            header
+            {
+                h1{
+                    font-size: $md-fontsize;
+                    font-family: 'Gulf';
+                    line-height: 35px;
+                     @media screen and(max-width:$tablet)
+                    {    
+                        font-size: $md-sm-fontsize;
+                    }
+                }
+                p{
+                    margin: 0px;
+                    font-size: 40px;
+                    font-family: $en-font;
+                     @media screen and(max-width:$tablet)
+                    {    
+                        font-size: $xm-fontsize;
+                    }
+                }
+            }
+        }
+    
+    }
+    .more{
+            @media screen and(max-width:$tablet)
+            {    
+                font-size:  $lr-xs-fontsize;
+            }
+        i{
+            margin-top: $sm-whitespace - 4px;
+            @media screen and(max-width:$tablet)
+            {    
+                font-size: $sm-iconsize;
+            }
+        }
+    }
+}
+
+#about-section
+{
+   
+
+    article
+    {
+       
+        padding: $lr-whitespace;
+        background: $c-white;
+        box-shadow: 0px 15px 60px 0px rgba(35, 39, 48, 0.15);
+        margin-bottom: $md-whitespace;
+        border-radius: 6px;
+       
+     
+        @media screen and(max-width:$tablet){
+            padding: $md-whitespace;
+            max-height: auto;
+            margin-bottom: $sm-whitespace;
+        }
+        i
+        {
+            font-size: 34px;
+            margin-bottom: $md-whitespace - 10px;
+            float: right;
+            width: 100%;
+            @media screen and(max-width:$tablet)
+            {
+                font-size: 16px;
+            }
+        }
+        header
+        {
+            h1
+            {
+                font-size: $lr-fontsize;
+                font-family: 'Gulf';
+                @media screen and(max-width:$tablet)
+                {
+                    font-size: $xm-fontsize;
+                }
+                    
+                
+            }
+            p{
+                font-size: $xm-fontsize;
+                font-family: 'Gulf';
+                line-height: 34px !important;
+                margin-bottom: 0;
+                @media screen and(max-width:$tablet){
+                    font-size: 16px;
+                }
+            }
+            ul{
+                li{
+                    font-family: 'Gulf';
+                }
+            }
+        }
+    }
+     .about-company
+    {
+        article{
+             min-height: 430px!important;
+        }
+    }
+}
